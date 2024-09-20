@@ -5,7 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import ButtonGroupBase from "./components/ButtonGroupBase";
+import TextField from "./components/TextField";
 
 function App() {
   const action = useNavigationType();
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<ButtonGroupBase />} />
+      <Route path="/" element={<TextField />} />
     </Routes>
   );
 }

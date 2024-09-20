@@ -58,7 +58,7 @@ const Button: FunctionComponent<ButtonType> = ({
 
   return (
     <div
-      className={`flex-1 rounded-xl [background:linear-gradient(13.73deg,_#155eef,_#528bff)] flex flex-row items-center justify-center py-2 pl-[11px] pr-[15px] box-border gap-2 min-w-[105px] text-left text-lg text-base-white font-heading-h6-medium ${className}`}
+      className={`flex-1 rounded-xl bg-base-white border-gray-300 border-[1px] border-solid box-border flex flex-row items-center justify-center py-1.5 pl-2.5 pr-3.5 gap-2 min-w-[110px] min-h-[44px] text-left text-lg text-gray-700 font-heading-h6-medium ${className}`}
       style={buttonStyle}
     >
       {iconLeft && (
@@ -69,7 +69,7 @@ const Button: FunctionComponent<ButtonType> = ({
         />
       )}
       <a
-        className="[text-decoration:none] relative leading-[24px] font-medium text-[inherit] inline-block min-w-[98px]"
+        className="[text-decoration:none] relative leading-[24px] font-medium text-[inherit] inline-block min-w-[70px]"
         style={buttonCTAStyle}
       >
         {buttonCTA}

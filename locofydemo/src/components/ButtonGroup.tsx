@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import ButtonGroupBase from "/";
+import ButtonGroupBase from "./ButtonGroupBase";
 
 export type ButtonGroupType = {
   className?: string;
@@ -13,23 +13,10 @@ const ButtonGroup: FunctionComponent<ButtonGroupType> = ({
       className={`h-10 flex flex-row items-center justify-start max-w-full text-left text-sm text-gray-700 font-heading-h6-medium ${className}`}
     >
       <ButtonGroupBase
-        iconRight={false}
+        iconRight
         iconLeft
-        propBorderRadius="10px 0px 0px 10px"
-        propAlignSelf="stretch"
-        propFlex="1"
-        propBackgroundColor="#fff"
-        propBorder="1px solid #d0d5dd"
-        propBorderTop="unset"
-        propBorderBottom="unset"
-        propMinWidth="unset"
-        propMinHeight="unset"
         iconEdit="/iconoverview.svg"
         trailing="Overview"
-        propMinWidth1="58px"
-        propTextDecoration="none"
-        propColor="#344154"
-        propDisplay="inline-block"
         iconLineArrowRight="pending_I3023:16456;581:3326;1071:7166"
       />
       <ButtonGroupBase

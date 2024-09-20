@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import ButtonGroupBase from "/";
+import ButtonGroupBase from "./ButtonGroupBase";
 
 export type PaginationType = {
   className?: string;
@@ -76,8 +76,21 @@ const Pagination: FunctionComponent<PaginationType> = ({ className = "" }) => {
         <ButtonGroupBase
           iconRight
           iconLeft
+          propBorderRadius="0px 10px 10px 0px"
+          propAlignSelf="unset"
+          propFlex="unset"
+          propBackgroundColor="#fff"
+          propBorder="1px solid #d0d5dd"
+          propBorderTop="unset"
+          propBorderBottom="unset"
+          propMinWidth="unset"
+          propMinHeight="unset"
           iconEdit="pending_I3023:16785;1071:7120;573:2085"
           trailing="Next"
+          propMinWidth1="30px"
+          propTextDecoration="unset"
+          propColor="#344154"
+          propDisplay="inline-block"
           iconLineArrowRight="/iconlinearrowright-3.svg"
         />
       </div>

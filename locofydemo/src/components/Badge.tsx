@@ -41,11 +41,11 @@ const Badge: FunctionComponent<BadgeType> = ({
 
   return (
     <div
-      className={`rounded-981xl bg-gray-100 flex flex-row items-center justify-center py-0.5 px-[9px] text-center text-sm text-gray-600 font-heading-h6-medium ${className}`}
+      className={`rounded-981xl bg-primary-50 flex flex-row items-center justify-center py-0.5 px-[9px] text-center text-sm text-primary-600 font-heading-h6-medium ${className}`}
       style={badge1Style}
     >
       <div
-        className="relative leading-[20px] font-medium inline-block min-w-[19px]"
+        className="flex-1 relative leading-[20px] font-medium inline-block min-w-[55px]"
         style={labelStyle}
       >
         {label}

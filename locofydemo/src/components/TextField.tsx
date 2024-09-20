@@ -54,7 +54,7 @@ const TextField: FunctionComponent<TextFieldType> = ({
 
   return (
     <div
-      className={`w-80 rounded-xl bg-base-white border-gray-300 border-[1px] border-solid box-border flex flex-row items-center justify-start py-2 px-[11px] gap-2 text-left text-base text-gray-400 font-heading-h6-medium ${className}`}
+      className={`self-stretch h-11 rounded-xl bg-base-white border-gray-300 border-[1px] border-solid box-border flex flex-row items-center justify-start py-2 px-[11px] gap-2 text-left text-base text-gray-400 font-heading-h6-medium ${className}`}
       style={textFieldStyle}
     >
       <div className="flex-1 flex flex-row items-center justify-start gap-2">
@@ -65,9 +65,12 @@ const TextField: FunctionComponent<TextFieldType> = ({
             src="/iconsearch.svg"
           />
         )}
-        <div className="flex-1 relative leading-[24px]" style={hintTextStyle}>
+        <a
+          className="[text-decoration:none] flex-1 relative leading-[24px] text-[inherit]"
+          style={hintTextStyle}
+        >
           {hintText}
-        </div>
+        </a>
       </div>
       {iconRight && (
         <img
@@ -77,7 +80,7 @@ const TextField: FunctionComponent<TextFieldType> = ({
         />
       )}
       <div
-        className="h-[22px] hidden flex-row items-center justify-start gap-0.5 text-gray-700"
+        className="h-[22px] hidden flex-row items-center justify-start py-0 pl-0 pr-0.5 box-border text-gray-700"
         style={itemStyle}
       >
         <div className="relative leading-[24px]">VND</div>

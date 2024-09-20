@@ -69,7 +69,7 @@ const ButtonGroupBase: FunctionComponent<ButtonGroupBaseType> = ({
     propMinHeight,
   ]);
 
-  const trailingStyle: CSSProperties = useMemo(() => {
+  const leadingStyle: CSSProperties = useMemo(() => {
     return {
       minWidth: propMinWidth1,
       textDecoration: propTextDecoration,
@@ -80,7 +80,7 @@ const ButtonGroupBase: FunctionComponent<ButtonGroupBaseType> = ({
 
   return (
     <div
-      className={`rounded-tl-none rounded-tr-3xs rounded-br-3xs rounded-bl-none bg-base-white border-gray-300 border-[1px] border-solid flex flex-row items-center justify-center py-2 px-3.5 gap-2 text-left text-sm text-gray-700 font-heading-h6-medium ${className}`}
+      className={`self-stretch flex-1 rounded-tl-3xs rounded-tr-none rounded-br-none rounded-bl-3xs bg-base-white border-gray-300 border-[1px] border-solid flex flex-row items-center justify-center py-2 px-3.5 gap-2 text-left text-sm text-gray-700 font-heading-h6-medium ${className}`}
       style={buttonGroupBaseStyle}
     >
       {iconLeft && (
@@ -90,12 +90,12 @@ const ButtonGroupBase: FunctionComponent<ButtonGroupBaseType> = ({
           src={iconEdit}
         />
       )}
-      <div
-        className="relative leading-[20px] font-medium inline-block min-w-[30px]"
-        style={trailingStyle}
+      <a
+        className="[text-decoration:none] relative leading-[20px] font-medium text-[inherit] inline-block min-w-[58px]"
+        style={leadingStyle}
       >
         {trailing}
-      </div>
+      </a>
       {iconRight && (
         <img
           className="h-5 w-5 relative overflow-hidden shrink-0"
